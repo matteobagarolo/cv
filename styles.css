@@ -1,0 +1,307 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    /*height: 100%;*/
+}
+
+body {
+    background-color: #F7CCAC;
+    font-family: 'Oxygen', sans-serif;
+    /*height: 100%;*/
+}
+
+a {
+    color: #3A3845;
+    text-decoration: none;
+}
+
+a:link {}
+
+a:visited {}
+
+a:focus {}
+
+a:hover {
+    background-color: #C69B7B;
+
+}
+
+a:active {}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: #3A3845;
+}
+
+p {
+	line-height: 1.5rem;
+}
+table {
+    margin-top: 2rem;
+}
+
+td {
+    text-align: center;
+}
+
+th {
+    text-align: center;
+    font-weight: bold;
+    background-color: #C69B7B;
+    padding: 1rem;
+    border-collapse: collapse;
+}
+
+.accordion {
+    width: 100%;
+}
+
+.accordion-box {
+    padding-left: 3rem;
+    padding-right: 3rem;
+    margin-top: 2rem;
+    visibility: hidden;
+    display: none;
+    transition-delay: 0.2s;
+    transition-property: visibility;
+}
+
+.accordion-box>ul {
+    padding: 1rem 5rem;
+    margin-right: auto;
+    margin-left: 3rem;
+}
+
+.accordion-box-icons {
+    height: 1.5rem;
+    width: 1.5rem;
+    float: right;
+}
+
+.accordion-icons {
+    height: 1.5rem;
+    width: 1.5rem;
+    align-self: right;
+}
+
+.accordion-list {
+    margin-top: 2rem;
+    padding-left: 3rem;
+    line-height: 1.5rem;
+
+}
+
+.accordion-table {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.accordion-text {
+    padding-left: 1rem;
+}
+
+.accordion-title {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 3rem;
+    cursor: pointer;
+}
+
+/*.bio-article {
+    height: 100%;
+}*/
+
+.container_1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /*height: 100%;*/
+    gap: 10rem;
+}
+
+/*.cont-skills{
+
+	height: 180%;
+}*/
+
+.conferences {
+	align-self: center;
+	margin-top: 20rem;
+	line-height: 2rem;
+}
+
+.education {
+    justify-content: center;
+}
+
+.footer {
+
+    left: 0;
+    height: 10rem;
+    flex-width: 100%;
+    background-color: #826F66;
+    color: #EEEBD9;
+    text-align: center;
+    margin-top: 20%;
+}
+
+.footer-icons {
+    height: 1.5rem;
+    width: 1.5rem;
+    margin-right: 0.5rem;
+}
+
+.footer_link {
+    color: black;
+}
+
+.footer-text {
+    text-align: center;
+    color: black;
+    padding-top: 3rem;
+}
+
+.footer-textbox {
+    background-color: #826F66;
+}
+
+
+
+.index {
+    list-style-type: none;
+    text-align: left;
+    padding-left: 1rem;
+}
+
+.in-text-img {
+    width: 8rem;
+    height: 8rem;
+    float: left;
+}
+
+.list-box {
+    margin: 1rem 3rem;
+    background-color: #C69B7B;
+    font-weight: bold;
+    padding: 1rem;
+    cursor: pointer;
+
+}
+
+.main-heading {
+    text-align: right;
+    font-size: 2rem;
+    padding-top: 10rem;
+    padding-right: 10rem;
+    padding-right: 20rem;
+    margin-bottom: 60%;
+    /* height: 100%;*/
+}
+
+.main-heading h5 {
+    font-style: italic;
+}
+
+.main-page-icons {
+    height: 80px;
+    width: 80px;
+    display: block;
+    margin-bottom: 4rem;
+    margin-top: 1rem;
+}
+
+.main-text {
+
+    display: inline-flex;
+    /* flex: 0 0 50%;
+    justify-content: center;*/
+    padding-left: 15rem;
+    padding-right: 15rem;
+    margin-bottom: 40rem;
+
+}
+
+
+.main-text-link {
+    text-decoration: underline;
+}
+
+.main-text-par {
+    text-align: center;
+    padding-left: 1rem;
+    margin-top: 1rem;
+}
+
+.navbar {
+    align-self: center;
+    position: fixed;
+    top: 50%;
+
+}
+
+.personal-photo {
+    height: 10rem;
+    width: 10rem;
+    border-radius: 100%;
+    float: right;
+    margin: 1rem 0 1rem 1rem;
+}
+
+.skill-div {
+    height: 150%;
+}
+
+.skillset {
+    flex: 20rem;
+    align-self: center;
+}
+
+.table-first-column {
+    text-align: left;
+}
+
+.text-with-img {
+    text-align: center;
+    padding-left: 1rem;
+
+}
+
+.ul-par {
+	margin-bottom: 1rem;
+	text-align: left;
+}
+.up-arrow {
+    height: 40px;
+    width: 40px;
+    position: fixed;
+    float: right;
+    bottom: 2rem;
+    right: 2rem;
+}
+
+.footer-notfirst {
+    padding-top: 1rem;
+}
+
+.footer-last {
+    padding-bottom: 2rem;
+}
+
+#accordion-box1 {
+    transition: visibility;
+}
+#clojure {
+	float: right;
+}
+#conf {
+	list-style: none;
+	line-height: 2rem;
+}
