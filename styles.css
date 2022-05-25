@@ -231,7 +231,7 @@ th {
 .index {
     list-style-type: none;
     text-align: left;
-    padding-left: 1rem;
+    padding-left: 4rem;
     position: fixed;
     top: 50%;
     max-width: 10%;
