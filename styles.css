@@ -41,8 +41,16 @@ h6 {
     color: #3A3845;
 }
 
+
 p {
-	line-height: 1.5rem;
+    line-height: 1.5rem;
+}
+
+@media (max-width:  792px){
+    p{
+        line-height: 100%;
+    }
+
 }
 table {
     margin-top: 2rem;
@@ -60,6 +68,7 @@ th {
     border-collapse: collapse;
 }
 
+
 .accordion {
     width: 100%;
 }
@@ -75,9 +84,15 @@ th {
 }
 
 .accordion-box>ul {
-    padding: 1rem 5rem;
+    padding: 1rem 3%;
     margin-right: auto;
     margin-left: 3rem;
+}
+
+@media (max-width: 792px){
+    .accordion-box>ul{
+        padding: 1rem 15% 1rem 0;
+    }
 }
 
 .accordion-box-icons {
@@ -99,6 +114,13 @@ th {
 
 }
 
+@media (max-width: 792px){
+    .accordion-list{
+        line-height: 100%;
+        margin-top: 0;
+    }
+}
+
 .accordion-table {
     margin-left: auto;
     margin-right: auto;
@@ -118,24 +140,37 @@ th {
 /*.bio-article {
     height: 100%;
 }*/
+.box-arrow {
+    float: right;
+}
 
 .container_1 {
     display: flex;
     flex-direction: column;
     justify-content: center;
     /*height: 100%;*/
-    gap: 10rem;
+    gap: 35rem;
+    padding-left: 10%;
+}
+
+@media (max-width: 792px) {
+    .container_1 {
+        margin-right: 20%;
+        clear: both;
+        padding-left: 2%;
+        justify-content: safe left;
+    }
 }
 
 /*.cont-skills{
 
-	height: 180%;
+    height: 180%;
 }*/
 
 .conferences {
-	align-self: center;
-	margin-top: 20rem;
-	line-height: 2rem;
+    align-self: center;
+    margin-top: 20rem;
+    line-height: 2rem;
 }
 
 .education {
@@ -181,10 +216,27 @@ th {
     padding-left: 1rem;
 }
 
+@media (max-width: 792px) {
+    .index {
+        text-align: center;
+        list-style-type: none;
+        float: right;
+        position: sticky;
+        padding-right: 25%;
+        line-height: 1.5rem;
+    }
+
+}
+
 .in-text-img {
-    width: 8rem;
-    height: 8rem;
+    max-width: 8rem;
     float: left;
+}
+
+@media (max-width: 792px) {
+    .in-text-img {
+        max-width: 20%;
+    }
 }
 
 .list-box {
@@ -199,23 +251,34 @@ th {
 .main-heading {
     text-align: right;
     font-size: 2rem;
-    padding-top: 10rem;
-    padding-right: 10rem;
-    padding-right: 20rem;
+    padding-top: 10%;
+    padding-right: 10%;
     margin-bottom: 60%;
     /* height: 100%;*/
 }
+
+@media (max-width: 792px) {
+    .main-heading {
+        text-align: left;
+        margin-right: 20%;
+        font-size: 140%;
+        font-style: normal;
+    }
+}
+
+.main-heading p {}
 
 .main-heading h5 {
     font-style: italic;
 }
 
 .main-page-icons {
-    height: 80px;
-    width: 80px;
+    /*height: 80px;*/
+    max-width: 10%;
+    min-width: 4rem;
     display: block;
-    margin-bottom: 4rem;
-    margin-top: 1rem;
+    margin-bottom: 8%;
+    margin-top: 5%;
 }
 
 .main-text {
@@ -223,11 +286,13 @@ th {
     display: inline-flex;
     /* flex: 0 0 50%;
     justify-content: center;*/
-    padding-left: 15rem;
-    padding-right: 15rem;
-    margin-bottom: 40rem;
+    padding-left: 5%;
+    padding-right: 15%;
+    margin-bottom: 30rem;
 
 }
+
+
 
 
 .main-text-link {
@@ -242,14 +307,22 @@ th {
 
 .navbar {
     align-self: center;
-    position: fixed;
+    position: sticky;
     top: 50%;
+    max-width: 15%;
 
 }
 
+@media (max-width: 792px) {
+    .navbar {
+        float: right;
+    }
+}
+
 .personal-photo {
-    height: 10rem;
-    width: 10rem;
+    /*height: 10rem;*/
+    max-width: 25%;
+    min-width: 6rem;
     border-radius: 100%;
     float: right;
     margin: 1rem 0 1rem 1rem;
@@ -275,16 +348,22 @@ th {
 }
 
 .ul-par {
-	margin-bottom: 1rem;
-	text-align: left;
+    margin-bottom: 1rem;
+    text-align: left;
 }
+
 .up-arrow {
-    height: 40px;
-    width: 40px;
+    max-width: 2.5rem;
     position: fixed;
     float: right;
     bottom: 2rem;
     right: 2rem;
+}
+
+@media (max-width: 792px) {
+    .up-arrow {
+        right: 10%;
+    }
 }
 
 .footer-notfirst {
@@ -298,10 +377,12 @@ th {
 #accordion-box1 {
     transition: visibility;
 }
+
 #clojure {
-	float: right;
+    float: right;
 }
+
 #conf {
-	list-style: none;
-	line-height: 2rem;
+    list-style: none;
+    line-height: 2rem;
 }
