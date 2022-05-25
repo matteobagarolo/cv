@@ -242,14 +242,12 @@ th {
     .index {
         text-align: center;
         list-style-type: none;
-        padding-right: 5%;
         line-height: 120%;
         position: fixed;
         min-height: 20%;
         padding-right: 15%;
         background-color: #826F66;
         min-width: 100%;
-        top: 88%;
     }
 
 }
