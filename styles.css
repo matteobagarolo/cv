@@ -58,6 +58,9 @@ td {
     text-align: center;
 }
 
+ul h3 {
+    padding-left: 0;
+}
 .arrow-return {
     max-width: 8%;
     position: fixed;
