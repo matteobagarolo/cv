@@ -31,36 +31,69 @@ a:hover {
 
 a:active {}
 
+h1,
+h3 {
+    padding-left: 15%;
+    padding-top: 20%;
+}
+
+@media (min-width: 1200px) {
+
+    h1,
+    h3 {
+        padding-top: 15%;
+    }
+}
+
+@media (min-width 792px) and (max-width 1200px) {
+
+    h1,
+    h3 {
+        padding-top: 15%;
+    }
+}
+
+
 td {
-	text-align: center;
+    text-align: center;
 }
 
 .arrow-return {
     max-width: 8%;
     position: fixed;
-    right: 4%;
-    top: 50%;
+    right: 8%;
+    top: 85%;
 
+}
+
+
+@media (min-width: 691px) {
+    .arrow-return {
+        max-width: 55px;
+    }
 }
 
 
 .bold-link {
-	color: black;
+    color: black;
 }
+
 .conferences {
-	text-align: center;
+    text-align: center;
 }
 
 .conferences-list {
-	padding-top: 10vh;
+    padding-top: 10vh;
 }
 
-.conferences-list>h3{
-	margin-bottom: 2rem;
+.conferences-list>h3 {
+    margin-bottom: 2rem;
 }
-.conferences-list>li{
-	margin: 1rem auto;
+
+.conferences-list>li {
+    margin: 1rem auto;
 }
+
 .container-1 {
     background-color: #f7ccac;
     min-height: 100%;
@@ -88,8 +121,10 @@ td {
     background-color: #f7ccac;
     display: flex;
     flex-direction: column;
-    max-width: 85%;
+    min-width: 100%;
     margin-bottom: 40%;
+    padding-left: 5%;
+    padding-right: 5%;
 }
 
 .container-4 .container-4 {
@@ -103,7 +138,7 @@ td {
 
 
 .footer {
-	padding-top: 1rem;
+    padding-top: 1rem;
     background-color: #826f66;
     min-height: 20%;
 }
@@ -128,28 +163,44 @@ td {
     text-align: center;
 }
 
-.heading-par{
-	padding-top: 20%;
+.heading-par {
+    padding-top: 5%;
 }
-.heading-par>h6{
-	font-style: italic;
+
+.heading-par>h6 {
+    font-style: italic;
 }
+
 .in-text-img {
-    max-width: 25%;
+    max-width: 15%;
+    margin: 3% auto;
     display: inline-block;
 
 }
-.language-skills-par{
-	padding-top: 2rem;
-	padding-bottom: 1.5rem;
+
+@media (min-width: 560px) {
+    .in-text-img {
+        max-width: 85px;
+    }
+}
+
+.language-skills-par {
+    padding-top: 2rem;
+    padding-bottom: 1.5rem;
 }
 
 .main-page-icons {
-    max-width: 20%;
+    max-width: 15%;
     display: block;
     padding-top: 15%;
     margin-bottom: 5%;
 
+}
+
+@media (min-width: 560px) {
+    .main-page-icons {
+        max-width: 85px;
+    }
 }
 
 .main-text-par {
@@ -169,7 +220,6 @@ td {
 
 .navbar-link {
     color: black;
-    font-weight: bold;
 
 }
 
@@ -181,13 +231,25 @@ td {
 
 .personal-photo {
     border-radius: 100%;
-    max-width: 35vw;
+    max-width: 25%;
     display: inline;
     float: right;
 }
 
+@media (min-width: 600px) {
+    .personal-photo {
+        max-width: 150px;
+    }
+}
+
+@media (max-width: 1200px) {
+    .personal-photo {
+        margin-right: 5%;
+    }
+}
+
 .skill {
-    /*border: .5vh #3A3845 solid;*/
+
     background-color: #C69B7B;
 
 }
@@ -197,29 +259,35 @@ td {
     overflow: hidden;
     display: none;
     max-height: 0;
+    background-color: #C69B7B;
 
 
 }
 
 .skill-description-list {
 
-    list-style: circle;
+    list-style: none;
     text-align: center;
     padding: auto 1vw;
+    background-color: #C69B7B;
 }
 
 .skill-description-list li {
     margin-bottom: 1rem;
 }
 
-.skill-img{
-	padding-top: 15vh;
+.skill-img {
+    padding-top: 15vh;
 }
 
 .skill-table {
-	margin-right: auto;
-	margin-left: auto;
+    margin-right: auto;
+    margin-left: auto;
+    background-color: #C69B7B;
+    min-width: 100%;
+
 }
+
 .skill-title {
     text-align: center;
     padding-top: 1rem;
@@ -230,8 +298,14 @@ td {
 
 
 .skills-first {
-    margin-top: 50%;
+    margin-top: 15rem;
 }
+
+/*@media (min-width 792px) and (max-width 1200px) {
+    .skills-first {
+        margin-top: 25%;
+    }
+}*/
 
 #skills {
     min-height: 100%;
