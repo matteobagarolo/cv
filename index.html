@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="it">
+<html>
 
 <head>
     <meta charset="utf-8">
@@ -7,105 +7,75 @@
     <title>Matteo Bagarolo - Homepage</title>
     <link rel="stylesheet" type="text/css" href="styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Oxygen&display=swap" rel="stylesheet">
-    <script type="text/javascript">
-    function apri(id, id_img) {
-        let x = document.getElementById(id);
-        let img = document.getElementById(id_img);
-
-        if (x.style.visibility == 'visible') {
-            x.style.visibility = 'hidden';
-            x.style.display = 'none';
-            img.src = 'images/arrow_down.png';
-
-
-        } else {
-            x.style.visibility = 'visible';
-            x.style.display = 'contents';
-            img.src = 'images/arrow.png';
-
-        }
-
-    }
-    window.onbeforeunload = function() {
-        window.scrollTo(0, 0);
-    }
-    </script>
+    <script type="text/javascript" src="script.js"></script>
 </head>
 
 <body>
-    <div>
+    <div class="container-2">
         <div class="navbar">
-            <ul class="index">
-                <li><a class="navbar_link" href="#bio">Bio</a></li>
-                <li><a class="navbar_link" href="#edu">Formazione</a></li>
-                <li><a class="navbar_link" href="conferences.html">Seminari e Conferenze</a></li>
-                <li><a class="navbar_link" href="#skills">Competenze</a></li>
-                <li><a class="navbar_link" href="#hobbies">Passioni!</a></li>
-                <li><a class="navbar_link" href="#contacts">Contatti</a></li>
-            </ul>
-        </div>
-        <div class="box arrow">
-            <a href="index.html" class="link-img">
-                <img class="up-arrow" src="images/arrow.png" alt="navigation arrow">
-            </a>
+          <p class="navbar-par"><a class="navbar-link" href="index.html">Home</a></p>
+            <p class="navbar-par"><a class="navbar-link" href="#bio">Bio</a></p>
+            <p class="navbar-par"><a class="navbar-link" href="#edu">Formazione</a></p>
+            <p class="navbar-par"><a class="navbar-link" href="conferences.html">Seminari e Conferenze</a></p>
+            <p class="navbar-par"><a class="navbar-link" href="#skills">Competenze</a></p>
+            <p class="navbar-par"><a class="navbar-link" href="#hobbies">Passioni!</a></p>
+            <p class="navbar-par"><a class="navbar-link" href="#contacts">Contatti</a></p>
         </div>
     </div>
-    <div class="container_1">
-        <div class="main-heading">
-            <p class="heading">
-                <h1>Matteo Bagarolo</h1>
-                <h5>pagina personale / curriculum vitae</h5>
+    <div class="container-1">
+        <div class="heading">
+            
+               <p class="heading-par"> <h1>Matteo Bagarolo</h1>
+                               <h6>pagina personale / curriculum vitae</h6></p>
+            
+        </div>
+        <div class="arrow">
+            <a href="index.html" class="link-img"><img class="arrow-return" src="images/arrow.png"></a>
+        </div>
+    </div>
+    <div class="container-4" id="edu">
+        <div class="formazione"> <img class="main-page-icons" src="images/education.png" alt="student hat">
+            <p class="main-text-par"> Ho conseguito il diploma di Laurea triennale in Storia presso l'Università di Torino nel 2014, con una tesi di storia medievale. Nel 2017 ho discusso la Tesi di Laurea Magistrale in Storia Medievale, e ho acquisito il diploma con la votazione di 110L. I miei interessi scientifici si sono quindi orientati allo studio delle strutture politiche e sociali dell'alto medioevo, e mi hanno portato a toccare campi scientifici esterni al mio principale ambito di lavoro (sociologia e antropologia, prima di tutto).</p>
+            <p class="main-text-par">Dal 2018 sono dottorando con borsa di studio presso l'Università di Padova con una tesi in storia medievale dal titolo L'episcopato nel regnum Italiae carolingio. Faccio parte dell'<a class="main-text-link" href="https://www.sismed.eu/it/progetti-di-ricerca/ruling-in-hard-times/equipe/">équipe di lavoro del Progetto di Ricerca di Interesse Nazionale (PRIN)</a> sulla governance dell'Italia carolingia, patrocinato dall'Università di Trento, dall'Università di Padova e dalla Scuola Normale Superiore di Pisa</p>
+            <p class="main-text-par">Nel corso del dottorato ho trascorso un periodo di studio di quattro mesi a Berlino, presso la Freie Universität.</p>
+            <p class="main-text-par">In questi anni di lavoro, ho avuto modo di partecipare a un progetto di ricerca, promosso dall'Università di Padova nell'ambito dei progetti d'eccellenza finanziati dall'Anvur (Agenzia nazionale di valutazione della ricerca), sullo studio della mobilità nel contesto delle discipline umanistiche (<a class="main-text-link" href="https://www.dissgea.unipd.it/mobility-and-the-humanities">Mobility & Humanities</a>). </p>
+            <p class="main-text-par">Nel corso di queste esperienze, ho avuto modo di fare ricorso a strumenti digitali per l'analisi qualitativa di dati, di studiarne alcuni <a class="main-text-link" href="files/summer_school.pdf">attraverso corsi di specializzazione</a>, e di farne uso nei miei progetti di ricerca.</p>
+        </div>
+    </div>
+    </div>
+    <div class="container-4" id="bio">
+        <div class="biog">
+          <img class="main-page-icons" src="images/biography.png" alt="bio picture">
+            <p class="main-text-par">Sono nato a Torino il 23/10/1989. Diplomato presso il Liceo Classico C.B. Cavour della mia città, ho avuto, a lato della mia carriera di studi, esperienze lavorative come commesso/magazziniere presso una piccola ditta di vendita di elettrodomestici e come segretario presso uno Studio medico odontoiatrico.</p>
+           <img class="personal-photo" src="images/foto.jpg">
+            <p class="text-with-img">Nel corso di queste esperienze lavorative, mi sono occupato, principalmente, di rapporti con il pubblico, gestione dell'agenda, elaborazione di questionari e indagini sulla qualità del servizio. Nelle mie mansioni di segreteria ho usato regolarmente database relazionali e i programmi (client di posta elettronica, pacchetto Office) di base nella gestione dell'attività di ufficio.</p>
+            <p class="main-text-par">Nel corso di queste esperienze lavorative, generalmente tenute in alternanza con la carriera universitaria, ho sempre coltivato, da autodidatta, un interesse per l'informatica che mi ha portato ad acquisire una buona conoscenza di alcuni dei più diffusi linguaggi di programmazione e ad applicarli in piccoli progetti personali. A queste conoscenze pregresse, così come alle soft-skills acquisite e coltivate nel corso delle mie attività lavorative e, soprattutto, accademiche, vorrei ora fare riferimento nello sviluppo della mia carriera professionale.</p>
+        </div>
+    </div>
+    <div class="container-4" id="skills">
+      <img class="main-page-icons skill-img" src="images/skills.png" alt="mastermind">
+        <div class="skill skills-first" onclick="openAccordion('soft-skills-description')">
+            <p class="skill-title">Soft-skills
             </p>
-        </div>
-        <div class="main-text">
-            <div class="bio-article" id="bio"><img class="main-page-icons" src="images/biography.png" alt="bio picture">
-                <p class="main-text-par">Sono nato a Torino il 23/10/1989. Diplomato presso il Liceo Classico C.B. Cavour della mia città, ho avuto, a lato della mia carriera di studi, esperienze lavorative come commesso/magazziniere presso una piccola ditta di vendita di elettrodomestici e come segretario presso uno Studio medico odontoiatrico.</p>
-                <p><img class="personal-photo" src="images/foto.jpg"></p>
-                <p class="text-with-img">Nel corso di queste esperienze lavorative, mi sono occupato, principalmente, di rapporti con il pubblico, gestione dell'agenda, elaborazione di questionari e indagini sulla qualità del servizio. Nelle mie mansioni di segreteria ho usato regolarmente database relazionali e i programmi (client di posta elettronica, pacchetto Office) di base nella gestione dell'attività di ufficio.</p>
-                <p class="main-text-par">Nel corso di queste esperienze lavorative, generalmente tenute in alternanza con la carriera universitaria, ho sempre coltivato, da autodidatta, un interesse per l'informatica che mi ha portato ad acquisire una buona conoscenza di alcuni dei più diffusi linguaggi di programmazione e ad applicarli in piccoli progetti personali. A queste conoscenze pregresse, così come alle soft-skills acquisite e coltivate nel corso delle mie attività lavorative e, soprattutto, accademiche, vorrei ora fare riferimento nello sviluppo della mia carriera professionale.</p>
+            <div class="skill-description" id="soft-skills-description">
+                <ul class="skill-description-list">
+                    <li><a class="main-text-link" href="images/persistenze.jpg">Organizzazione convegni e seminari</a>: contatti con partecipanti, loro accomodazione, rapporti con il catering</li>
+                    <li>Supervisione scientifica di convegni e seminari: redazione call for papers, lettura e valutazione contributi scritti, dibattito</li>
+                    <li>Presentazione in pubblico di ricerche e papers scientifici in italiano e in inglese</li>
+                    <li><a class="main-text-link" href="https://data.typeracer.com/pit/profile?user=ducaconte">Buone doti dattilografiche</a> in italiano e in inglese</li>
+                    <li>Stesura di testi argomentativi e saggi scientifici</li>
+                    <li>Conoscenza approfondita pacchetto Office (Microsoft, Open Office, Libre Office)</li>
+                    <li>Conoscenza e uso di piattaforme di inserimento, analisi qualitativa e geolocalizzazione dati (<a class="main-text-link" href="https://nodegoat.net/">nodegoat</a> e <a class="main-text-link" href="https://www.qsrinternational.com/nvivo-qualitative-data-analysis-software/home">nvivo</a>)</li>
+                    <li>Dimestichezza con il lavoro in squadra, con elementi provenienti da diversi ambiti disciplinari e Paesi. Coordinamento nella ricerca, confronto su risultati ottenuti e dibattito in presenza e a distanza.</li>
+                    <li>Hosting e gestione call con i più diffusi strumenti di videochiamata (Skype, Zoom, Microsoft Teams)</li>
+                </ul>
             </div>
         </div>
-        <div class="main-text">
-            <div class="education" id="edu"><img class="main-page-icons" src="images/education.png" alt="student hat">
-                <p class="main-text-par"> Ho conseguito il diploma di Laurea triennale in Storia presso l'Università di Torino nel 2014, con una tesi di storia medievale. Nel 2017 ho discusso la Tesi di Laurea Magistrale in Storia Medievale, e ho acquisito il diploma con la votazione di 110L. I miei interessi scientifici si sono quindi orientati allo studio delle strutture politiche e sociali dell'alto medioevo, e mi hanno portato a toccare campi scientifici esterni al mio principale ambito di lavoro (sociologia e antropologia, prima di tutto).</p>
-                <p class="main-text-par">Dal 2018 sono dottorando con borsa di studio presso l'Università di Padova con una tesi in storia medievale dal titolo L'episcopato nel regnum Italiae carolingio. Faccio parte dell'<a class="main-text-link" href="https://www.sismed.eu/it/progetti-di-ricerca/ruling-in-hard-times/equipe/">équipe di lavoro del Progetto di Ricerca di Interesse Nazionale (PRIN)</a> sulla governance dell'Italia carolingia, patrocinato dall'Università di Trento, dall'Università di Padova e dalla Scuola Normale Superiore di Pisa</p>
-                <p class="main-text-par">Nel corso del dottorato ho trascorso un periodo di studio di quattro mesi a Berlino, presso la Freie Universität.</p>
-                <p class="main-text-par">In questi anni di lavoro, ho avuto modo di partecipare a un progetto di ricerca, promosso dall'Università di Padova nell'ambito dei progetti d'eccellenza finanziati dall'Anvur (Agenzia nazionale di valutazione della ricerca), sullo studio della mobilità nel contesto delle discipline umanistiche (<a class="main-text-link" href="https://www.dissgea.unipd.it/mobility-and-the-humanities">Mobility & Humanities</a>). </p>
-                <p class="main-text-par">Nel corso di queste esperienze, ho avuto modo di fare ricorso a strumenti digitali per l'analisi qualitativa di dati, di studiarne alcuni <a class="main-text-link" href="files/summer_school.pdf">attraverso corsi di specializzazione</a>, e di farne uso nei miei progetti di ricerca.</p>
-            </div>
-        </div>
-        <div class="main-text">
-            <div class="skillset" id="skills">
-                <img class="main-page-icons" src="images/skills.png" alt="mastermind">
-                <div class="accordion">
-                    <div class="accordion-title" onclick="apri('accordion-box-1', 'accordion-icon1')">
-                        <p class="accordion-text">Competenze generali - <em>soft skills</em></p>
-                        <img class="accordion-icons" id="accordion-icon1" src="images/arrow_down.png">
-                    </div>
-                    <div class="accordion-box" id="accordion-box-1">
-                        <p>
-                            <ul class="accordion-list">
-                                <li><a class="main-text-link" href="images/persistenze.jpg">Organizzazione convegni e seminari</a>: contatti con partecipanti, loro accomodazione, rapporti con il catering</li>
-                                <li>Supervisione scientifica di convegni e seminari: redazione call for papers, lettura e valutazione contributi scritti, dibattito</li>
-                                <li>Presentazione in pubblico di ricerche e papers scientifici in italiano e in inglese</li>
-                                <li><a class="main-text-link" href="https://data.typeracer.com/pit/profile?user=ducaconte">Buone doti dattilografiche</a> in italiano e in inglese</li>
-                                <li>Stesura di testi argomentativi e saggi scientifici</li>
-                                <li>Conoscenza approfondita pacchetto Office (Microsoft, Open Office, Libre Office)</li>
-                                <li>Conoscenza e uso di piattaforme di inserimento, analisi qualitativa e geolocalizzazione dati (<a class="main-text-link" href="https://nodegoat.net/">nodegoat</a> e <a class="main-text-link" href="https://www.qsrinternational.com/nvivo-qualitative-data-analysis-software/home">nvivo</a>)</li>
-                                <li>Dimestichezza con il lavoro in squadra, con elementi provenienti da diversi ambiti disciplinari e Paesi. Coordinamento nella ricerca, confronto su risultati ottenuti e dibattito in presenza e a distanza.</li>
-                                <li>Hosting e gestione call con i più diffusi strumenti di videochiamata (Skype, Zoom, Microsoft Teams)</li>
-                            </ul>
-                        </p>
-                    </div>
-                </div>
-                <br>
-                <div class="accordion">
-                    <div class="accordion-title" onclick="apri('accordion-box-2', 'accordion-icon2')">
-                        <p class="accordion-text">Competenze linguistiche</p>
-                        <img class="accordion-icons" id="accordion-icon2" src="images/arrow_down.png">
-                    </div>
-                    <div class="accordion-box" id="accordion-box-2">
-                        <table class="accordion-table">
+        <div class="skill" onclick="openAccordion('language-description')">
+            <p class="skill-title">Competenze linguistiche
+            </p>
+            <div class="skill-description" id="language-description">
+                <table class="skill-table">
                             <tr>
                                 <th>Lingua</th>
                                 <th>Listening</th>
@@ -131,90 +101,85 @@
                                 <td>B1</td>
                             </tr>
                         </table>
-                        <ul class="accordion-list">
-                            <p class="main-text-par ul-par"> Esperienze di studio di lingua tanto in Italia, quanto all'estero. In particolare:</p>
+                        <ul class="skill-description-list">
+                            <p class="main-text-par language-skills-par">Esperienze di studio di lingua tanto in Italia, quanto all'estero. In particolare:</p>
                             <li>Studio del tedesco di base (A1) presso il Centro Linguistico d'Ateneo di Padova, nel corso degli studi dottorali. Continuazione degli studi (fino a livello A2) attraverso soggiorni all'estero a Berlino (Freie Universität - 4 mesi) e Tubinga (1 mese). Frequentazione di corsi presso l'Istituto Italo-Tedesco di Padova (B1).</li>
                             <li>Perfezionamento della Lingua inglese nel corso degli studi dottorali, con particolare attenzione a lessico e usi tipici dell'inglese accademico. Regolare elaborazione, stesura e presentazione di contributi scientifici in inglese presso uditori tedeschi e inglesi.</li>
                             <li>Studio da autodidatta e lettura di testi letterari e scientifici in francese.</li>
                         </ul>
-                    </div>
-                </div>
-                <br>
-                <div class="accordion">
-                    <div class="accordion-title" onclick="apri('accordion-box-3', 'accordion-icon3')">
-                        <p class="accordion-text">Competenze informatiche</p>
-                        <img class="accordion-icons" id="accordion-icon3" src="images/arrow_down.png">
-                    </div>
-                    <div class="accordion-box" id="accordion-box-3">
-                        <div class="accordion">
-                            <div class="list-box" onclick="apri('accordion-box-4', 'accordion-icon4')">
-                                <p>Elaborazione dati <img class="accordion-box-icons" id="accordion-icon4" src="images/arrow_down.png"></p>
-                            </div>
-                            <div class="accordion-box" id="accordion-box-4">
-                                <ul class="accordion-list">
-                                    <li>Uso libreria Python Pandas e Numoy per manipolazione ed estrazione di dati da database (formati sql, csv, xml)</li>
-                                    <li>Uso librerie Python Matplotlib e Seaborn per visualizzazione dati e costruzione di grafici</li>
-                                    <li>Conoscenza intermedia di <a class="main-text-link" href="https://clojure.org/">Clojure</a> e manipolazione di documenti csv</li>
-                                    <li>Uso avanzato di excel (e analoghi open source)</li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="accordion">
-                            <div class="list-box" onclick="apri('accordion-box-5', 'accordion-icon5')">
-                                <p>Front-end development <img class="accordion-box-icons" id="accordion-icon5" src="images/arrow_down.png"></p>
-                            </div>
-                            <div class="accordion-box" id="accordion-box-5">
-                                <ul class="accordion-list">
-                                    <li>Buona conoscenza componenti HTML5 e loro uso nell'organizzazione del documento</li>
-                                    <li>CSS: elaborazione di layout di pagina con Flexbox e CSS Grid, conoscenza di base di Bootstrap</li>
-                                    <li>Conoscenza di base di scripting in Javascript e semplici implementazioni nel modello DOM</li>
-                                    <li>Conoscenza e uso degli strumenti di debugging Chrome e Firefox</li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="accordion" onclick="apri('accordion-box-6', 'accordion-icon6')">
-                            <div class="list-box">
-                                <p>Amministrazione sistemi GNU/Linux <img class="accordion-box-icons" id="accordion-icon6" src="images/arrow_down.png"></p>
-                            </div>
-                            <div class="accordion-box" id="accordion-box-6">
-                                <ul class="accordion-list">
-                                    <li>Esperienza con distribuzioni Ubuntu, Debian, Fedora</li>
-                                    <li>Gestione e modifica pacchetti installati (aptitude)</li>
-                                    <li>Shell scripting di base per automazione routines di lavoro (backup di sistema, uso di cron)</li>
-                                    <li>Gestione utenti e gruppi utenti con utilities di sistema</li>
-                                    <li>Espressioni regolari: POSIX Basic Regular Expressions e Extended Regular Expressions</li>
-                                    <li>Manipolazione di standard input e file di testo con sed e awk</li>
-                                    <li>Configurazione e compilazione programmi da codice sorgente con MakeFile</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
             </div>
         </div>
-        <div class="main-text">
-            <div class="hobbs" id="hobbies">
-                <img class="main-page-icons" src="images/programmer.png" alt="programmer icon">
-                <p class="main-text-par">A lato della mia formazione umanistica, coltivo, da anni, un crescente interesse per l'informatica. A partire dai primi esperimenti con sistemi operativi GNU/Linux (2010), ho poi cominciato ad approcciarmi a C e C++ per la risoluzione di <a class="main-text-link" href="https://codeforces.com/profile/vic_x">semplici problemi di implementazione e algoritmi</a>.</p>
-                <p><img class="in-text-img" src="images/tux.png"></p>
-                <p class="main-text-par">Oltre alla continuativa esperienza con Linux, ho allargato i miei interessi a due altri linguaggi di programmazione: Clojure e Python. In particolare, ho incominciato a usare Python nell'analisi e nell'organizzazione di open data, nella loro manipolazione e visualizzazione grafica.</p>
-                <p class="main-text-par">Sempre con un occhio alle applicazioni pratiche delle nozioni imparate, mi sono dedicato all'implementazione di HTML, CSS e Javascript in piccole e semplici pagine web, come quella che avete di fronte.</p>
-                <p class="main-text-par">Nel corso di questa continuativa e sempre più intensa esperienza da autodidatta, ho avuto modo di familiarizzare con l'uso di diversi editor di testo e IDE, che hanno costituito i miei strumenti di lavoro: vim, VisualStudioCode, atom, Sublime Text.</p>
-                <p><img class="in-text-img" id="clojure" src="images/clojure.png"></p>
-                <p class="main-text-par">Posso sostenere di conoscere bene la sintassi di Python e Clojure, discretamente quella di C, C++ e Javascript. La mia esperienza di programmazione è in larga parte legata all'uso di Python, per quanto io sia in grado di scrivere e correggere (debugging) semplici programmi in tutti i linguaggi elencati.</p>
+        <div class="skill" onclick="openAccordion('cs-description')">
+            <p class="skill-title">Competenze informatiche
+            </p>
+        </div>
+        <div class="skill-description" id="cs-description">
+            <div class="container-4">
+                <div class="skill" onclick="openAccordion('data-description')">
+                    <p class="skill-title">Elaborazione dati</p>
+                    <div class="skill-description" id="data-description">
+                        <ul class="skill-description-list">
+                            <li>Uso libreria Python Pandas e Numpy per manipolazione ed estrazione di dati da database (formati sql, csv, xml)</li>
+                            <li>Uso librerie Python Matplotlib e Seaborn per visualizzazione dati e costruzione di grafici</li>
+                            <li>Conoscenza intermedia di <a class="main-text-link" href="https://clojure.org/">Clojure</a> e manipolazione di documenti csv</li>
+                            <li>Uso avanzato di excel (e analoghi open source)</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="skill" onclick="openAccordion('webdev-description')">
+                    <p class="skill-title">Front-end development</p>
+                    <div class="skill-description" id="webdev-description">
+                        <ul class="skill-description-list">
+                            <li>Buona conoscenza componenti HTML5 e loro uso nell'organizzazione del documento</li>
+                            <li>CSS: elaborazione di layout di pagina con Flexbox e CSS Grid, conoscenza di base di Bootstrap</li>
+                            <li>Conoscenza di base di scripting in Javascript e semplici implementazioni nel modello DOM</li>
+                            <li>Conoscenza e uso degli strumenti di debugging Chrome e Firefox</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="skill" onclick="openAccordion('linux-description')">
+                    <p class="skill-title">Amministrazione sistemi GNU/Linux</p>
+                    <div class="skill-description" id="linux-description">
+                        <ul class="skill-description-list">
+                            <li>Esperienza con distribuzioni Ubuntu, Debian, Fedora</li>
+                            <li>Gestione e modifica pacchetti installati (aptitude)</li>
+                            <li>Shell scripting di base per automazione routines di lavoro (backup di sistema, uso di cron)</li>
+                            <li>Gestione utenti e gruppi utenti con utilities di sistema</li>
+                            <li>Espressioni regolari: POSIX Basic Regular Expressions e Extended Regular Expressions</li>
+                            <li>Manipolazione di standard input e file di testo con sed e awk</li>
+                            <li>Configurazione e compilazione programmi da codice sorgente con MakeFile</li>
+                        </ul>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
-    <div class="footer" id="contacts">
-        <div class="footer-textbox">
-            <p class="footer-text"> <img class="footer-icons" src="images/email.png"><strong>Mail:</strong> <a href="mailto:matteo.bagarolo@gmail.com" class="footer_link">matteo.bagarolo@gmail.com</a></p>
-            <div>
-                <p class="footer-text footer-notfirst"><img class="footer-icons" src="images/github.png"><a href="https://github.com/matteobagarolo" class="footer_link"><strong>Pagina github.com</strong></a></p>
-            </div>
-            <div>
-                <p class="footer-text footer-notfirst footer-last"><img class="footer-icons" src="images/linkedin.png"><a href="https://www.linkedin.com/in/matteo-bagarolo-2103a6236/" class="footer_link"><strong>linkedin.com</strong> </a></p>
-            </div>
+    </div>
+    <div class="container-4" id="hobbies">
+        <div class="hobby">
+            <img class="main-page-icons" src="images/programmer.png" alt="programmer icon">
+            <p class="main-text-par">A lato della mia formazione umanistica, coltivo, da anni, un crescente interesse per l'informatica. A partire dai primi esperimenti con sistemi operativi GNU/Linux (2010), ho poi cominciato ad approcciarmi a C e C++ per la risoluzione di <a class="main-text-link" href="https://codeforces.com/profile/vic_x">semplici problemi di implementazione e algoritmi</a>.</p>
+            <p><img class="in-text-img" src="images/tux.png"></p>
+            <p class="main-text-par">Oltre alla continuativa esperienza con Linux, ho allargato i miei interessi a due altri linguaggi di programmazione: Clojure e Python. In particolare, ho incominciato a usare Python nell'analisi e nell'organizzazione di open data, nella loro manipolazione e visualizzazione grafica.</p>
+            <p class="main-text-par">Sempre con un occhio alle applicazioni pratiche delle nozioni imparate, mi sono dedicato all'implementazione di HTML, CSS e Javascript in piccole e semplici pagine web, come quella che avete di fronte.</p>
+            <p class="main-text-par">Nel corso di questa continuativa e sempre più intensa esperienza da autodidatta, ho avuto modo di familiarizzare con l'uso di diversi editor di testo e IDE, che hanno costituito i miei strumenti di lavoro: vim, VisualStudioCode, atom, Sublime Text.</p>
+            <p><img class="in-text-img" id="clojure" src="images/clojure.png"></p>
+            <p class="main-text-par">Posso sostenere di conoscere bene la sintassi di Python e Clojure, discretamente quella di C, C++ e Javascript. La mia esperienza di programmazione è in larga parte legata all'uso di Python, per quanto io sia in grado di scrivere e correggere (debugging) semplici programmi in tutti i linguaggi elencati.</p>
         </div>
+    </div>
+    <div class="container-2 footer" id="contacts">
+        <p class="footer-text">
+            <img class="footer-icons" src="images/email.png">Mail:
+            <a href="mailto:matteo.bagarolo@gmail.com" class="footer-link">matteo.bagarolo@gmail.com</a>
+        </p>
+        <p class="footer-text">
+            <img class="footer-icons" src="images/github.png">
+            <a href="https://github.com/matteobagarolo" class="footer-link bold-link">Pagina github.com</a>
+        </p>
+        <p class="footer-text">
+            <img class="footer-icons" src="images/linkedin.png">
+            <a href="https://www.linkedin.com/in/matteo-bagarolo-2103a6236/" class="footer-link bold-link">linkedin.com </a>
+        </p>
     </div>
 </body>
 

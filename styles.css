@@ -4,18 +4,18 @@
     padding: 0;
 }
 
+body,
 html {
-    /*height: 100%;*/
+    height: 100%;
 }
 
 body {
-    background-color: #F7CCAC;
+    background-color: #f7ccac;
     font-family: 'Oxygen', sans-serif;
-    /*height: 100%;*/
 }
 
 a {
-    color: #3A3845;
+    color: #3a3845;
     text-decoration: none;
 }
 
@@ -26,183 +26,86 @@ a:visited {}
 a:focus {}
 
 a:hover {
-    background-color: #C69B7B;
-
+    background-color: #c69b7b;
 }
 
 a:active {}
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-    color: #3A3845;
-}
-
-
-p {
-    line-height: 1.5rem;
-}
-
-@media (max-width: 792px) {
-    p {
-        line-height: 100%;
-    }
-
-}
-
-table {
-    margin-top: 2rem;
-}
-
 td {
-    text-align: center;
+	text-align: center;
 }
 
-th {
-    text-align: center;
-    font-weight: bold;
-    background-color: #C69B7B;
-    padding: 1rem;
-    border-collapse: collapse;
-}
-
-
-.accordion {
-    width: 100%;
-}
-
-.accordion-box {
-    padding-left: 3rem;
-    padding-right: 3rem;
-    margin-top: 2rem;
-    visibility: hidden;
-    display: none;
-    transition-delay: 0.2s;
-    transition-property: visibility;
-}
-
-.accordion-box>ul {
-    padding: 1rem 3%;
-    margin-right: auto;
-    margin-left: 3rem;
-}
-
-@media (max-width: 792px) {
-    .accordion-box>ul {
-        padding: 1rem 15% 1rem 0;
-    }
-}
-
-.accordion-box-icons {
-    height: 1.5rem;
-    width: 1.5rem;
-    float: right;
-}
-
-.accordion-icons {
-    height: 1.5rem;
-    width: 1.5rem;
-    align-self: right;
-}
-
-.accordion-list {
-    margin-top: 2rem;
-    padding-left: 3rem;
-    line-height: 1.5rem;
+.arrow-return {
+    max-width: 8%;
+    position: fixed;
+    right: 4%;
+    top: 50%;
 
 }
 
-@media (max-width: 792px) {
-    .accordion-list {
-        line-height: 100%;
-        margin-top: 0;
-    }
+
+.bold-link {
+	color: black;
+}
+.conferences {
+	text-align: center;
 }
 
-.accordion-table {
-    margin-left: auto;
-    margin-right: auto;
+.conferences-list {
+	padding-top: 10vh;
 }
 
-@media (max-width: 792px){
-    .accordion-table td {
-        overflow: hidden;
-    }
+.conferences-list>h3{
+	margin-bottom: 2rem;
+}
+.conferences-list>li{
+	margin: 1rem auto;
+}
+.container-1 {
+    background-color: #f7ccac;
+    min-height: 100%;
+    display: grid;
+    grid-template-columns: 85% 15%;
 }
 
-.accordion-text {
-    padding-left: 1rem;
+.container-2 {
+    background-color: #f7ccac;
+    height: 10%;
+    display: grid;
+    grid-template-columns: 100%;
+
 }
 
-.accordion-title {
-    display: flex;
-    justify-content: space-between;
-    margin-top: 3rem;
-    cursor: pointer;
-}
-
-/*.bio-article {
+.container-3 {
     height: 100%;
-}*/
-.box-arrow {
-    float: right;
-}
-.conferences{
-    margin-top: 20%;
+    background-color: #f7ccac;
+    display: grid;
+    grid-template-columns: 85% 15%;
+
 }
 
-.container_1 {
+.container-4 {
+    background-color: #f7ccac;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    /*height: 100%;*/
-    gap: 10rem;
-    padding-left: 10%;
-    flex-wrap: wrap;
+    max-width: 85%;
+    margin-bottom: 40%;
 }
 
-@media (max-width: 792px) {
-    .container_1 {
-        clear: both;
-        padding-left: 2%;
-        justify-content: safe left;
-    }
+.container-4 .container-4 {
+    min-width: 100%;
 }
 
-/*.cont-skills{
-
-    height: 180%;
-}*/
-
-.conferences {
-    align-self: center;
-    margin-top: 20rem;
-    line-height: 2rem;
+.desc-subs {
+    display: none;
 }
 
-.education {
-    justify-content: center;
-}
+
 
 .footer {
-
-    left: 0;
-    background-color: #826F66;
-    color: #EEEBD9;
-    text-align: center;
-    margin-top: 20%;
-}
-
-@media (max-width: 792px){
-    #contacts{
-        position: fixed;
-        bottom: 0;
-        min-width: 100%;
-        margin-top: 0;
-    }
+	padding-top: 1rem;
+    background-color: #826f66;
+    min-height: 20%;
 }
 
 .footer-icons {
@@ -211,220 +114,125 @@ th {
     margin-right: 0.5rem;
 }
 
-.footer_link {
-    color: black;
-}
-
 .footer-text {
+    display: inline-block;
     text-align: center;
     color: black;
-    padding-top: 3rem;
-}
-
-.footer-textbox {
-    background-color: #826F66;
-}
-
-
-
-.index {
-    list-style-type: none;
-    text-align: left;
-    padding-left: 4rem;
-    position: fixed;
-    top: 50%;
-    max-width: 10%;
-}
-
-@media (max-width: 792px) {
-    .index {
-        text-align: center;
-        list-style-type: none;
-        line-height: 120%;
-        position: fixed;
-        top: 35rem;
-        padding-right: 15%;
-        background-color: #826F66;
-        min-width: 100%;
-        bottom: 0;
-    }
-
-}
-
-@media (max-width: 792px) {
-    .index>li {
-        display: inline-block;
-        margin: 2%;
-    }
-}
-
-
-
-.in-text-img {
-    max-width: 8rem;
-    float: left;
-}
-
-@media (max-width: 792px) {
-    .in-text-img {
-        max-width: 20%;
-    }
-}
-
-.list-box {
-    margin: 1rem 3rem;
-    background-color: #C69B7B;
     font-weight: bold;
-    padding: 1rem;
-    cursor: pointer;
-
 }
 
-.main-heading {
-    text-align: right;
-    font-size: 2rem;
-    padding-top: 10%;
-    padding-right: 10%;
-    margin-bottom: 60%;
-    /* height: 100%;*/
+.formazione,
+.biog,
+.hobby {
+    margin-top: 10vh;
+    text-align: center;
 }
 
-@media (max-width: 792px) {
-    .main-heading {
-        text-align: left;
-        margin-right: 20%;
-        font-size: 140%;
-        font-style: normal;
-    }
+.heading-par{
+	padding-top: 20%;
 }
+.heading-par>h6{
+	font-style: italic;
+}
+.in-text-img {
+    max-width: 25%;
+    display: inline-block;
 
-.main-heading p {}
-
-.main-heading h5 {
-    font-style: italic;
+}
+.language-skills-par{
+	padding-top: 2rem;
+	padding-bottom: 1.5rem;
 }
 
 .main-page-icons {
-    /*height: 80px;*/
-    max-width: 10%;
-    min-width: 4rem;
+    max-width: 20%;
     display: block;
-    margin-bottom: 8%;
-    margin-top: 5%;
-}
+    padding-top: 15%;
+    margin-bottom: 5%;
 
-.main-text {
-
-    display: inline-flex;
-    /* flex: 0 0 50%;
-    justify-content: center;*/
-    padding-left: 5%;
-    padding-right: 15%;
-    margin-bottom: 30rem;
-
-}
-
-
-
-
-.main-text-link {
-    text-decoration: underline;
 }
 
 .main-text-par {
-    text-align: center;
-    padding-left: 1rem;
-    margin-top: 1rem;
+    font-size: 1rem;
+    margin-top: 1vh;
+    display: inline-block;
 }
 
 .navbar {
-    align-self: center;
+    text-align: center;
     position: fixed;
-    top: 50%;
-    max-width: 80%;
+    min-height: 10%;
+    min-width: 100%;
+    background-color: #826f66;
+    font-size: 2.5vh;
+}
 
+.navbar-link {
+    color: black;
+    font-weight: bold;
 
 }
 
-@media (max-width: 792px) {
-    .navbar {
-        float: right;
-        top: 88%;
-    }
-}
-@media (max-width: 792px){
-    .navbar_link {
-        color: black;
-        font-weight: bold;
-    }
+.navbar-par {
+    display: inline-block;
+    margin: 0.5vh 1vw;
+    padding-top: 0.5vh;
 }
 
 .personal-photo {
-    /*height: 10rem;*/
-    max-width: 25%;
-    min-width: 6rem;
     border-radius: 100%;
+    max-width: 35vw;
+    display: inline;
     float: right;
-    margin: 1rem 0 1rem 1rem;
 }
 
-.skill-div {
-    height: 150%;
+.skill {
+    /*border: .5vh #3A3845 solid;*/
+    background-color: #C69B7B;
+
 }
 
-.skillset {
-    flex: 20rem;
-    align-self: center;
+.skill-description {
+    visibility: hidden;
+    overflow: hidden;
+    display: none;
+    max-height: 0;
+
+
 }
 
-.table-first-column {
-    text-align: left;
-}
+.skill-description-list {
 
-.text-with-img {
+    list-style: circle;
     text-align: center;
-    padding-left: 1rem;
-
+    padding: auto 1vw;
 }
 
-.ul-par {
+.skill-description-list li {
     margin-bottom: 1rem;
-    text-align: left;
 }
 
-.up-arrow {
-    max-width: 2.5rem;
-    position: fixed;
-    float: right;
-    bottom: 2rem;
-    right: 2rem;
+.skill-img{
+	padding-top: 15vh;
 }
 
-@media (max-width: 792px) {
-    .up-arrow {
-        max-width: 7%;
-        right: 5%;
-        bottom: 2%;
-    }
+.skill-table {
+	margin-right: auto;
+	margin-left: auto;
 }
-
-.footer-notfirst {
+.skill-title {
+    text-align: center;
     padding-top: 1rem;
+    padding-bottom: 1rem;
+    color: #3A3845;
+    font-weight: bold;
 }
 
-.footer-last {
-    padding-bottom: 2rem;
+
+.skills-first {
+    margin-top: 50%;
 }
 
-#accordion-box1 {
-    transition: visibility;
-}
-
-#clojure {
-    float: right;
-}
-
-#conf {
-    list-style: none;
-    line-height: 2rem;
+#skills {
+    min-height: 100%;
 }
